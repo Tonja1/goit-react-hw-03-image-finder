@@ -4,8 +4,8 @@ import { List } from './ImageGalleryStyled';
 import { Component } from 'react';
 import { getImg } from 'Services/GetImg';
 import { Loader } from 'components/Loader/Loader';
-
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export class ImageGallery extends Component {
     state = {
@@ -74,7 +74,7 @@ export class ImageGallery extends Component {
     if (status === 'resolved') {
       return (
         <List>
-          {this.state.ImgArray.map(el => {
+          {this.state.imgArray.map(el => {
             return (
               <ImageGalleryItem
                 key={el.id}
