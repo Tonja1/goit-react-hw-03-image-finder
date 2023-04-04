@@ -3,10 +3,8 @@ import { SearchBarForm } from "./Searchbar/Searchbar";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { LoadMore } from "./Button/Button";
 import { ToastContainer, toast } from "react-toastify";
-import { Modal } from "./Modal/Modal";
 import 'react-toastify/dist/ReactToastify.css';
-
-
+import { Modal } from "./Modal/Modal";
 
 export class App extends Component {
   state = {

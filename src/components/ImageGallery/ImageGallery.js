@@ -4,8 +4,8 @@ import { List } from './ImageGalleryStyled';
 import { Component } from 'react';
 import { getImg } from 'Services/GetImg';
 import { Loader } from 'components/Loader/Loader';
-import { toast } from 'react-toastify/dist/components';
-import 'react-toastify/dist/ReactToastify.css';
+
+
 
 export class ImageGallery extends Component {
     state = {
