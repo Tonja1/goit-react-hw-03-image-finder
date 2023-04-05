@@ -15,13 +15,13 @@ export class Modal extends Component {
 
     handleKeyDown = e => {
         if (e.code === 'Escape') {
-            this.props.toogle.Modal();
+            this.props.toggleModal();
         }
     };
 
     handleClickBackdrop = e => {
         if (e.target === e.currentTarget) {
-            this.props.toogle.Modal();
+            this.props.toggleModal();
         }
     };
 
@@ -40,5 +40,5 @@ export class Modal extends Component {
     }
 }
 Modal.propTypes = {
-    toogleModal: propTypes.func.isRequired,
+    toggleModal: propTypes.func.isRequired,
 };

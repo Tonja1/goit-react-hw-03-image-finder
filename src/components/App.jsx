@@ -17,7 +17,7 @@ export class App extends Component {
     currentImageDescription: null,
   };
 
-  toogleModal = () => {
+  toggleModal = () => {
     this.setState(({ showModal }) => ({ showModal: !showModal }));
   };
 
@@ -73,14 +73,14 @@ export class App extends Component {
   };
 
   render() {
-    const { state, onSubmit, statusState, onLoadImg, toogleModal, openModal } = this;
+    const { state, onSubmit, statusState, onLoadImg, toggleModal, openModal } = this;
     return (
       <>
         {state.showModal && (
           <Modal
             currentImageDescription={state.currentImageDescription}
             currentImageUrl={state.currentImageUrl}
-            toogleModal={toogleModal}
+            toggleModal={toggleModal}
           />
         )}
         <SearchBarForm onSubmit={onSubmit} />
